@@ -74,6 +74,10 @@ def check_rows():
         return board[3]
     elif row_3:
         return board[6]
+    else:
+        return None
+def check_column():
+    global game_still_going
 
     row_1 = board[0] == board[1] == board[2] != "-"
     row_2 = board[3] == board[4] == board[5] != "-"
